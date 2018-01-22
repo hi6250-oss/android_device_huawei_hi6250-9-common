@@ -4,6 +4,7 @@
 
 # Bluetooth
 ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
+ro.rfkilldisabled=1
 
 # Fastbootd
 ro.fastbootd.available=true
