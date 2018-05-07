@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
     android.hardware.radio.deprecated@1.0 \
-    librilutils
+    librilutils \
+    qti-telephony-common
 
 # Sensors
 PRODUCT_PACKAGES += \
