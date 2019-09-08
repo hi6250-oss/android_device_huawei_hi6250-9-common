@@ -212,6 +212,10 @@ PRODUCT_PACKAGES += \
 #PRODUCT_BOOT_JARS += \
 #    telephony-ext
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_ui
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \

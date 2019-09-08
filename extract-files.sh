@@ -72,6 +72,9 @@ function blob_fixup() {
 	vendor/lib/libxcollie.so|vendor/lib64/libxcollie.so)
 	    "${PATCHELF}" --add-needed "libunwindstack_v28.so" "${2}"
 	    ;;
+	vendor/lib64/libcamera_algo.so)
+	    "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
+	    ;;
     esac
 }
 
