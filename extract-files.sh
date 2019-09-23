@@ -63,6 +63,9 @@ function blob_fixup() {
 	vendor/bin/start_connectivity_hisi)
 	    sed -i 's/net_bt_stack/bluetooth/g' "${2}"
 	    ;;
+	vendor/lib/hw/audio.primary.hi6250.so|vendor/lib64/hw/audio.primary.hi6250.so)
+	    patchelf --add-needed "libprocessgroup.so" "${2}"
+	    ;;
 	vendor/lib/hw/gralloc.hi6250.so|vendor/lib64/hw/gralloc.hi6250.so)
 	    "${PATCHELF}" --add-needed "libhidlbase.so" "${2}"
 	    ;;
