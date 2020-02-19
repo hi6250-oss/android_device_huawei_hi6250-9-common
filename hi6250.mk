@@ -28,3 +28,6 @@ PRODUCT_PACKAGES += \
     init.recovery.hi6250.rc \
     init.tee.rc \
     init.vowifi.rc
+
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
