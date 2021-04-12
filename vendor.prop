@@ -41,6 +41,9 @@ persist.video_player_opt=1
 persist.partial_update_support=1
 persist.skip_lowfreq=1
 
+# NFC
+ro.hardware.nfc_nci=nqx.default
+
 # Recovery
 persist.sys.recovery_update=true
 
