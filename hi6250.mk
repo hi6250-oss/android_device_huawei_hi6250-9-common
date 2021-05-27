@@ -7,6 +7,9 @@
 ## Common Path
 COMMON_PATH := device/huawei/hi6250-9-common
 
+## Inherit common vendor blobs
+$(call inherit-product, vendor/huawei/hi6250-9-common/hi6250-9-common-vendor.mk)
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.hi6250 \
