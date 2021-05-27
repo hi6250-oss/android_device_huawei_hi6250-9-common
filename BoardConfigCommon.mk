@@ -49,6 +49,9 @@ TARGET_BOARD_PLATFORM := hi6250
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodem \
