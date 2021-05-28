@@ -72,6 +72,9 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     splash2 \
     version
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 

@@ -1,0 +1,9 @@
+# Root
+/3rdmodem(/.*)?			u:object_r:thirdmodem_file:s0
+/3rdmodemnvm(/.*)?		u:object_r:thirdmodemnvm_file:s0
+/3rdmodemnvmbkp(/.*)?		u:object_r:thirdmodemnvmbkp_file:s0
+/cust(/.*)?			u:object_r:cust_file:s0
+/modem_log(/.*)?		u:object_r:modemlog_file:s0
+/sec_storage(/.*)?		u:object_r:secstorage_file:s0
+/splash2(/.*)?			u:object_r:splashtwo_file:s0
+/version(/.*)?			u:object_r:version_file:s0

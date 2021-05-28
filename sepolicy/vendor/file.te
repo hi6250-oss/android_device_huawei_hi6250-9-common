@@ -1,0 +1,9 @@
+# Root
+type thirdmodem_file, file_type;
+type thirdmodemnvm_file, file_type;
+type thirdmodemnvmbkp_file, file_type;
+type cust_file, file_type;
+type modemlog_file, file_type;
+type secstorage_file, file_type;
+type splashtwo_file, file_type;
+type version_file, file_type;
