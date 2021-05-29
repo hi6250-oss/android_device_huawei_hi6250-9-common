@@ -27,6 +27,8 @@ on early-boot
     mkdir /mnt/media_rw 0750 media_rw media_rw
 
 on init
+    symlink /dev/block/platform/hi_mci.0 /dev/block/bootdevice
+
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
     chmod 660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
