@@ -1,0 +1,10 @@
+on post-fs
+    mkdir /data/vendor/bluedroid 0770 bluetooth bluetooth
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    start mac_nvme
+
+service mac_nvme /vendor/bin/hw/mac_nvme
+    user root
+    group bluetooth system wifi
+    oneshot
+    disabled
