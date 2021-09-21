@@ -56,6 +56,7 @@ TARGET_BOARD_PLATFORM := hi6250
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
+BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
 
 # Releasetools
