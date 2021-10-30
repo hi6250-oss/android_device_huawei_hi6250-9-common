@@ -61,6 +61,10 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodem \
