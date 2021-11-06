@@ -1,18 +1,3 @@
-on early-init
-
-on init
-
-on early-fs
-
-on fs
-
-on post-fs
-
-on post-fs-data
-
-
-on early-boot
-
 on boot
     # z00142519 change permissions for bluetooth
     chmod 660 /dev/ttyAMA4
@@ -48,10 +33,3 @@ on boot
     # control wifi firmware path
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
     chown wifi wifi /sys/module/bcmdhd/parameters/nvram_path
-
-service wifi_wakeup_src /vendor/bin/wifiwakeupsrc
-    class core
-    user root
-    group root wifi
-    disabled
-    oneshot

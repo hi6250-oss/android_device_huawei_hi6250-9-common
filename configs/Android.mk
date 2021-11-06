@@ -75,13 +75,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := init.connectivity.rc
-LOCAL_SRC_FILES := init/init.connectivity.rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := init.device.rc
 LOCAL_SRC_FILES := init/init.device.rc
 LOCAL_MODULE_CLASS := ETC

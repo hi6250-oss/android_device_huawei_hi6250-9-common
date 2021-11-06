@@ -16,8 +16,7 @@
 
 #union image: 110x and bcm
 on early-init
-    #ro.connectivity.chiptype has been seted in init.c->main()->set_connectivity_prop()
-    #setprop ro.connectivity.chiptype "hisi"
+    setprop ro.connectivity.chiptype "hisi"
 #wifi
     setprop wifi.interface wlan0
 
