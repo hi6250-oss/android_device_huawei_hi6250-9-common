@@ -22,4 +22,5 @@ LOCAL_CFLAGS := -Wno-unused-parameter
 LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
+LOCAL_INIT_RC := lights.rc
 include $(BUILD_SHARED_LIBRARY)
