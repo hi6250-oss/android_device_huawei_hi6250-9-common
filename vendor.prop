@@ -40,5 +40,8 @@ persist.video_player_opt=1
 persist.partial_update_support=1
 persist.skip_lowfreq=1
 
+# Recovery
+persist.sys.recovery_update=true
+
 # VoLTE
 ro.config.hw_volte_on=true
