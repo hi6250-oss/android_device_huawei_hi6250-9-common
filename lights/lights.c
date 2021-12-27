@@ -31,6 +31,7 @@
 
 
 #define LCD_FILE		"/sys/class/leds/lcd_backlight0/brightness"
+#define LCD_MAX_FILE		"/sys/class/leds/lcd_backlight0/max_brightness"
 
 #define RED_LED_FILE		"/sys/class/leds/red/brightness"
 #define RED_DELAY_ON_FILE	"/sys/class/leds/red/delay_on"
@@ -45,6 +46,8 @@
 #define BLUE_DELAY_ON_FILE	"/sys/class/leds/blue/delay_on"
 #define BLUE_DELAY_OFF_FILE	"/sys/class/leds/blue/delay_off"
 #endif
+
+#define DEFAULT_MAX_BRIGHTNESS 255
 
 enum lights {
 	UNDEFINED = -1,
@@ -81,6 +84,8 @@ static pthread_barrier_t g_barr_on, g_barr_off;
 static struct thread_data g_data[3];
 static pthread_t g_threads[3];
 
+static int max_brightness = DEFAULT_MAX_BRIGHTNESS;
+
 static int write_int(const char *path, int value) {
 
 	char buffer[8];
@@ -104,10 +109,11 @@ static int write_int(const char *path, int value) {
 static inline int rgb_to_brightness(struct light_state_t const* state) {
 
 	int color = state->color & 0x00ffffff;
-
-	return ((77 * ((color >> 16) & 0x00ff))
+	unsigned int brightness = ((77 * ((color >> 16) & 0x00ff))
 		+ (150 * ((color >> 8) & 0x00ff))
 		+ (29 * (color & 0x00ff))) >> 8;
+
+	return brightness * (max_brightness / DEFAULT_MAX_BRIGHTNESS);
 }
 
 static inline uint8_t get_color(uint32_t colorRGB, enum led_color color) {
@@ -354,6 +360,17 @@ static int close_lights(struct light_device_t *dev) {
 	return 0;
 }
 
+static void read_max_brightness() {
+    int fd = -1;
+    char buff[255];
+    fd = open(LCD_MAX_FILE, O_RDONLY);
+    if(!fd) {
+	return;
+    }
+    if(read(fd,buff, 255))
+	max_brightness = atoi(buff);
+}
+
 static int open_lights(const struct hw_module_t* module, const char *name,
 						struct hw_device_t** device)
 {
@@ -421,6 +438,7 @@ error:
 	dev->set_light = set_light;
 
 	*device = (struct hw_device_t*)dev;
+	read_max_brightness();
 
 	return 0;
 }
