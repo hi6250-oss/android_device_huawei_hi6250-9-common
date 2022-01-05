@@ -44,6 +44,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Platform
 TARGET_BOARD_PLATFORM := hi6250
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodem \
