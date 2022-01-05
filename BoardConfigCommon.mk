@@ -53,9 +53,7 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodemnvm \
     3rdmodemnvmbkp \
     cust \
-    eng \
     modem_log \
-    patch_hw \
     sec_storage \
     splash2 \
     version
