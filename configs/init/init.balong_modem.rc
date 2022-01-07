@@ -1,0 +1,25 @@
+on fs
+	mkdir /mnt/modem 0755 root system
+	mkdir /mnt/modem/modem_secure 0755 root system
+	mkdir /mnt/modem/mnvm2:0 0755 root system
+	mount_all /vendor/etc/fstab.modem --early
+
+on post-fs
+    wait /sys/devices/platform/his_modem/modem_sysboot_start
+	chown radio radio sys/devices/platform/balong_power/state
+on data_ready
+	start pmom
+
+on zygote-start
+	# When pureandroid test,The vold process will unmount mnt directory mounted partition ,
+	# so after the completion of the vold process started, mount_all modem partition and then boot modem.
+	mount_all /vendor/etc/fstab.modem --early
+	write /sys/devices/platform/his_modem/modem_sysboot_start 1
+
+service pmom /vendor/bin/pmom_cat -d "bdat" -e s -r 10240 -z 3 -n 1
+	class late_start
+	user root
+	group system
+	disabled
+    oneshot
+	seclabel u:r:pmom_cat:s0

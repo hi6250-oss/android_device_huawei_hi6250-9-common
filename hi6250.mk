@@ -11,5 +11,20 @@ COMMON_PATH := device/huawei/hi6250-9-common
 PRODUCT_PACKAGES += \
     fstab.hi6250 \
     fstab.hi6250_ramdisk \
-    init.recovery.hi6250.rc
-
+    fstab.modem \
+    init.audio.rc \
+    init.balong_modem.rc \
+    init.connectivity.bcm43455.rc \
+    init.connectivity.gps.rc \
+    init.connectivity.hi1102.rc \
+    init.connectivity.rc \
+    init.device.rc \
+    init.hi6250.rc \
+    init.hisi.rc \
+    init.manufacture.rc \
+    init.performance.rc \
+    init.platform.rc \
+    init.post-fs-data.rc \
+    init.recovery.hi6250.rc \
+    init.tee.rc \
+    init.vowifi.rc
