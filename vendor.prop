@@ -1,0 +1,41 @@
+#
+# vendor.prop for hi6250-common
+#
+
+# Bluetooth
+ro.bt.bdaddr_path=/data/vendor/bluedroid/macbt
+
+# Graphics
+ro.opengles.version=196610
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+
+# Huawei
+bastet.service.enable=true
+vendor.debug.config.mmu_en=1
+ro.vendor.tui.service=true
+ro.kirin.config.hw_board_ipa=true
+ro.kirin.config.hw_perfgenius=true
+ro.product.platform.pseudonym=1ARB9CV
+ro.kirin.product.platform=hi6250
+ro.config.hw_smart_shrink=true
+ro.comp.chipset_version=Chipset-chicago 9.1.0.6(0B23)
+
+# Media
+persist.kirin.media.offload.enable=true
+persist.kirin.media.lowlatency.enable=false
+ro.vendor.config.hw_music_lp=true
+ro.vendor.config.music_lp_vol=true
+persist.kirin.alloc_buffer_sync=true
+persist.kirin.texture_cache_opt=1
+persist.huawei.touch_vsync_opt=1
+persist.huawei.touch_move_opt=1
+persist.huawei.touchevent_opt=1
+persist.vendor.cpub_min_freq_skip=1
+persist.vendor.smart_pool=1
+persist.video_player_opt=1
+persist.partial_update_support=1
+persist.skip_lowfreq=1
+
+# VoLTE
+ro.config.hw_volte_on=true

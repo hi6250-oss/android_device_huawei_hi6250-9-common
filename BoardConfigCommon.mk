@@ -50,6 +50,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Platform
 TARGET_BOARD_PLATFORM := hi6250
 
+# Props
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.hi6250
 
