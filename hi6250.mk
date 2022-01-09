@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
     init.post-fs-data.rc \
     init.recovery.hi6250.rc \
     init.tee.rc \
-    init.vowifi.rc
+    init.vowifi.rc \
+    ueventd.hi6250.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
