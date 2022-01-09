@@ -419,7 +419,7 @@ vendor/bin/syna_109A0_ta.sec
 vendor/bin/syna_155A_ta.sec
 vendor/bin/syna_155A_ta_lldp.sec
 vendor/bin/teecd
-vendor/etc/native_packages.xml
+vendor/etc/native_packages.xml:vendor/etc/native_packages.bin
 vendor/lib/libteec.so
 vendor/lib/libteec_eid.so
 vendor/lib/libteec_vendor.so
