@@ -247,7 +247,6 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib/hw/gralloc.hi6250.so
 vendor/lib/hw/hwcomposer.hi6250.so
 vendor/lib/libOpenCLFoundation.so
-vendor/lib/libOpenCL.so
 vendor/lib/libSR_opencl.so
 vendor/lib/libhiion.so
 vendor/lib/libperfgenius_vendor_client.so
@@ -259,7 +258,6 @@ vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/hw/gralloc.hi6250.so
 vendor/lib64/hw/hwcomposer.hi6250.so
 vendor/lib64/libOpenCLFoundation.so
-vendor/lib64/libOpenCL.so
 vendor/lib64/libSR_opencl.so
 vendor/lib64/libhiion.so
 vendor/lib64/libperfgenius_vendor_client.so
