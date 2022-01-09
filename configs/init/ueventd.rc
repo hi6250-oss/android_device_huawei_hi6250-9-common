@@ -62,7 +62,7 @@
 # /sys/class/camerafs/node/dual_leds			0664  system    system
 /dev/hifi_misc                                          0770  root      audio
 /dev/voice_proxy_vowifi                                 0660  root      audio
-/dev/dsm                            0660  system    dsm
+/dev/dsm                            0660  system    system
 
 /dev/pn544  					0660 	nfc 	nfc
 /dev/cxd224x-i2c 				0660 	nfc 	nfc
