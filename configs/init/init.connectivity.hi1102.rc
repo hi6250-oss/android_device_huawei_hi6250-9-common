@@ -21,6 +21,9 @@ on early-init
 #wifi
     setprop wifi.interface wlan0
 
+on init
+    chown bluetooth bluetooth /dev/hwbt
+
 on boot
 #   for bluetooth mac
     mkdir /data/vendor/bluedroid 02770 bluetooth bluetooth
@@ -124,6 +127,4 @@ service fusd /vendor/bin/fusion_daemon
     class late_start
     user system
     group system
-#bluetooth
 
-   chown bluetooth bluetooth /dev/hwbt

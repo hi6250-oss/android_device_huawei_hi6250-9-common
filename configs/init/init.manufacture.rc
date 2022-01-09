@@ -48,14 +48,6 @@ on post-fs
 
 on post-fs-data
 
-on early-boot
-    #update user hota update state in oeminfo, and enture oeminfo_nvm has been working already
-    # 1: hota first boot start
-    # 0: hota first boot end
-    write /dev/kmsg " user_hota_update_oem first boot start++"
-    user_hota_update_oem 1
-    write /dev/kmsg " user_hota_update_oem first boot start--"
-
 on boot
 
 service atcmdserver /vendor/bin/atcmdserver
