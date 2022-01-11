@@ -45,3 +45,6 @@ persist.sys.recovery_update=true
 
 # VoLTE
 ro.config.hw_volte_on=true
+
+# VoWifi
+ro.vendor.config.hw_vowifi=true
