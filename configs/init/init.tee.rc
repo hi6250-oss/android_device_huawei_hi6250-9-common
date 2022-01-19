@@ -1,11 +1,4 @@
 on init
-#mount secure storage partition for teeos
-    #mkdir /sec_storage
-     mount ext4 /dev/block/bootdevice/by-name/secure_storage /sec_storage nosuid nodev noatime wait crypt discard,auto_da_alloc,mblk_io_submit,data=journal,context=u:object_r:teecd_data_file:s0
-     chown root root /sec_storage
-     chmod 600 /sec_storage
-
-on init
 #add for TrustedCore driver
     chmod 0400 /dev/hisi_teelog
 
