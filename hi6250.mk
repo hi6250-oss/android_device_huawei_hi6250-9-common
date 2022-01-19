@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     init.hi6250.rc \
     init.hisi.rc \
+    init.hisi.usb.rc \
     init.manufacture.rc \
     init.performance.rc \
     init.platform.rc \

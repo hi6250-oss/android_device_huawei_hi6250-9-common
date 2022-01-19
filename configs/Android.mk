@@ -96,6 +96,13 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := init.hisi.usb.rc
+LOCAL_SRC_FILES := init/init.hisi.usb.rc
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := init.manufacture.rc
 LOCAL_SRC_FILES := init/init.manufacture.rc
 LOCAL_MODULE_CLASS := ETC
