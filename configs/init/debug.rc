@@ -1,0 +1,9 @@
+on fs
+    rm /cache/debug.txt
+    start cache_debug
+
+service cache_debug /system/bin/logcat -b all -f /cache/debug.txt -v threadtime
+    class main
+    user root
+    group system
+    disabled

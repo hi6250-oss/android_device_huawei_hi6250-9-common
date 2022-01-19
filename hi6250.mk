@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Debug
+PRODUCT_PACKAGES += \
+    debug.rc
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
