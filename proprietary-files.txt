@@ -31,6 +31,8 @@ vendor/lib/hw/hicam.hal.service.so
 vendor/lib/hwcam/hwcam.ddt.so
 vendor/lib/hwcam/hwcam.services.so
 vendor/lib/libcamerabuffer.so
+vendor/lib/vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so
+vendor/lib/vendor.huawei.hardware.camera.cfgsvr@1.0.so
 vendor/lib/vendor.huawei.hardware.camera.factory@1.0.so
 vendor/lib64/hw/CameraFactoryService.so
 vendor/lib64/hw/hicam.hal.bz.so
@@ -38,6 +40,8 @@ vendor/lib64/hw/hicam.hal.service.so
 vendor/lib64/hwcam/hwcam.ddt.so
 vendor/lib64/hwcam/hwcam.services.so
 vendor/lib64/libcamerabuffer.so
+vendor/lib64/vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so
+vendor/lib64/vendor.huawei.hardware.camera.cfgsvr@1.0.so
 vendor/lib64/vendor.huawei.hardware.camera.factory@1.0.so
 
 # Camera Configs
