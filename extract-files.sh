@@ -66,6 +66,9 @@ function blob_fixup() {
 	vendor/lib/hw/gralloc.hi6250.so|vendor/lib64/hw/gralloc.hi6250.so)
 	    "${PATCHELF}" --add-needed "libhidlbase.so" "${2}"
 	    ;;
+	vendor/lib/libxcollie.so|vendor/lib64/libxcollie.so)
+	    "${PATCHELF}" --add-needed "libunwindstack_v28.so" "${2}"
+	    ;;
 	vendor/lib64/hw/hwcomposer.hi6250.so)
 	    # Disable checkPartialUpdate
 	    xxd -p "${2}" | sed "s/acbcff97e00313aa/1f2003d5e00313aa/g" | xxd -r -p > "${2}".patched
