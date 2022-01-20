@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+	vendor/bin/start_connectivity_hisi)
+	    sed -i 's/net_bt_stack/bluetooth/g' "${2}"
+	    ;;
 	vendor/lib/hw/gralloc.hi6250.so|vendor/lib64/hw/gralloc.hi6250.so)
 	    "${PATCHELF}" --add-needed "libhidlbase.so" "${2}"
 	    ;;
