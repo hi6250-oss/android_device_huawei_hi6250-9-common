@@ -11,8 +11,8 @@ vendor/lib64/libsmartpakit.so
 vendor/lib64/libtas2560.so
 
 # Audio Configs
-vendor/etc/audio/audio_effects.xml
-vendor/etc/audio/audio_policy_configuration.xml
+vendor/etc/audio_effects.xml|53cc7ac57da48c324613792e5a7c9eca2c17d989
+vendor/etc/audio_policy_configuration.xml|13ce1694762d63bdb7c2e96b154f28efdef00372
 
 # Audio Effects
 vendor/lib/soundfx/libhuaweiprocessing.so
