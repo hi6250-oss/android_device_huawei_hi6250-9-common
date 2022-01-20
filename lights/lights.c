@@ -25,6 +25,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
+#include <unistd.h>
 
 #include <log/log.h>
 #include <hardware/lights.h>
@@ -228,7 +229,7 @@ static void reset_leds(void) {
 
 static void write_leds_locked(struct led_config *led) {
 
-	static struct led_config led_off = {0};
+	static struct led_config led_off __unused = {0};
 	static bool blinking = false;
 	enum led_color color;
 
