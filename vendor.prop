@@ -12,6 +12,7 @@ ro.fastbootd.available=true
 ro.opengles.version=196610
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
+debug.hwui.use_partial_updates=false
 
 # Huawei
 bastet.service.enable=true
