@@ -317,6 +317,7 @@ vendor/etc/modemConfig/viacbp82d_log.bcfg
 vendor/etc/modemConfig/VIA/basic_name
 vendor/etc/modemConfig/VIA/viacbp82d_FieldTest.bcfg
 vendor/etc/factory_modem.cfg
+vendor/modem/modem_fw/readme.txt
 
 # OMX
 vendor/etc/media_codecs.xml
