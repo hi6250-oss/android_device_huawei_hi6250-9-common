@@ -77,6 +77,10 @@ function blob_fixup() {
 	    # Disable SetPartialUpdates
 	    xxd -p "${2}" | sed "s/e00314aaa3bcff97/e00314aa1f2003d5/g" | xxd -r -p > "${2}".patched
 	    mv "${2}".patched "${2}"
+
+	    # Disable CalcLayerMaskRects
+	    xxd -p "${2}" | sed "s/a0bcff97d70e40b9/1f2003d5d70e40b9/g" | xxd -r -p > "${2}".patched
+	    mv "${2}".patched "${2}"
 	    ;;
     esac
 }
