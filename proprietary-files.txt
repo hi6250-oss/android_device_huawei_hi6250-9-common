@@ -347,9 +347,9 @@ vendor/etc/modemConfig/VIA/viacbp82d_FieldTest.bcfg
 vendor/etc/factory_modem.cfg
 vendor/modem/modem_fw/readme.txt
 
-# OMX
+# OMX - edited media_codecs_performance.xml from FIG-LX1 9.1.0.163(C432E8R1P5T8)
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
+vendor/etc/media_codecs_performance.xml|77d5c5c67cc8c9cdbf2cf098248211a92c740d4e
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/lib/libomx_vxd.so
