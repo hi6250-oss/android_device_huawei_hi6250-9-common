@@ -46,6 +46,8 @@ vendor/lib/vendor.huawei.hardware.camera.camResource.orbService@1.0.so
 vendor/lib/vendor.huawei.hardware.camera.cfgsvr@1.0.so
 vendor/lib/vendor.huawei.hardware.camera.cfgsvr@1.1.so
 vendor/lib/vendor.huawei.hardware.camera.factory@1.0.so
+vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.0.so
+vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.1.so
 vendor/lib/vendor.huawei.hardware.sensors@1.0.so
 vendor/lib64/hw/CameraFactoryService.so
 vendor/lib64/hw/hicam.hal.bz.so
@@ -70,6 +72,8 @@ vendor/lib64/vendor.huawei.hardware.camera.camResource.orbService@1.0.so
 vendor/lib64/vendor.huawei.hardware.camera.cfgsvr@1.0.so
 vendor/lib64/vendor.huawei.hardware.camera.cfgsvr@1.1.so
 vendor/lib64/vendor.huawei.hardware.camera.factory@1.0.so
+vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.0.so
+vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.1.so
 vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 
 # Camera Configs
@@ -390,6 +394,7 @@ vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi6250.so
 vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi6250.so
 
 # TEE
+vendor/bin/hw/vendor.huawei.hardware.libteec@2.0-service
 vendor/bin/32e6a847-ac89-4f81-8a13-f4ae50451d7f.sec
 vendor/bin/335129cd-41fa-4b53-9797-5ccb202a52d4.sec
 vendor/bin/4382f063-a6c3-485f-8786-e275512bd2ad.sec
@@ -452,11 +457,14 @@ vendor/bin/syna_109A0_ta.sec
 vendor/bin/syna_155A_ta.sec
 vendor/bin/syna_155A_ta_lldp.sec
 vendor/bin/teecd
+vendor/etc/init/vendor.huawei.hardware.libteec@2.0-service.rc
 vendor/etc/native_packages.xml:vendor/etc/native_packages.bin
+vendor/lib/hw/vendor.huawei.hardware.libteec@2.0-impl.so
 vendor/lib/libteec.so
 vendor/lib/libteec_eid.so
 vendor/lib/libteec_vendor.so
 vendor/lib/vendor.huawei.hardware.libteec@2.0.so
+vendor/lib64/hw/vendor.huawei.hardware.libteec@2.0-impl.so
 vendor/lib64/libteec.so
 vendor/lib64/libteec_eid.so
 vendor/lib64/libteec_vendor.so
