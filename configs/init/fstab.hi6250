@@ -9,7 +9,7 @@
 /dev/block/platform/hi_mci.0/by-name/version   /version   ext4    ro,barrier=1    wait,first_stage_mount
 /dev/block/platform/hi_mci.0/by-name/cust    /cust    ext4    ro,barrier=1    wait,first_stage_mount
 /dev/block/platform/hi_mci.0/by-name/odm    /odm    ext4    ro,barrier=1    wait,first_stage_mount
-/dev/block/platform/hi_mci.0/by-name/splash2         /splash2                ext4      rw,nosuid,nodev,noatime,data=ordered,context=u:object_r:splash2_data_file:s0 wait,nofail
+/dev/block/platform/hi_mci.0/by-name/splash2         /splash2                ext4      rw,nosuid,nodev,noatime,data=ordered,context=u:object_r:splashtwo_file:s0 wait,nofail
 /devices/hi_mci.1/mmc_host/mmc1/*                       auto                auto      defaults                                      voldmanaged=sdcard:auto,noemulatedsd
 /devices/platform/hi_mci.1/mmc_host/mmc1/*                       auto                auto      defaults                                      voldmanaged=sdcard:auto,noemulatedsd
 /devices/hisi-usb-otg/usb1/*                            auto                auto      defaults                                      voldmanaged=usbotg:auto

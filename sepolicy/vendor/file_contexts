@@ -3,7 +3,10 @@
 /3rdmodemnvm(/.*)?		u:object_r:thirdmodemnvm_file:s0
 /3rdmodemnvmbkp(/.*)?		u:object_r:thirdmodemnvmbkp_file:s0
 /cust(/.*)?			u:object_r:cust_file:s0
-/modem_log(/.*)?		u:object_r:modemlog_file:s0
-/sec_storage(/.*)?		u:object_r:secstorage_file:s0
+/mnt/modem/mnvm2:0(/.*)?	u:object_r:modem_nv_file:s0
+/mnt/modem/modem_secure(/.*)?	u:object_r:modem_secure_file:s0
+/modem_log(/.*)?		u:object_r:modem_log_file:s0
+/sec_storage(/.*)?		u:object_r:teecd_data_file:s0
 /splash2(/.*)?			u:object_r:splashtwo_file:s0
+/vendor/modem/modem_fw(/.*)?	u:object_r:modem_fw_file:s0
 /version(/.*)?			u:object_r:version_file:s0

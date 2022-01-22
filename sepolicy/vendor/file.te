@@ -3,7 +3,12 @@ type thirdmodem_file, file_type;
 type thirdmodemnvm_file, file_type;
 type thirdmodemnvmbkp_file, file_type;
 type cust_file, file_type;
-type modemlog_file, file_type;
-type secstorage_file, file_type;
+type modem_fw_file, file_type;
+type modem_log_file, file_type;
+type modem_nv_file, file_type;
+type modem_secure_file, file_type;
 type splashtwo_file, file_type;
 type version_file, file_type;
+
+# TEE
+type teecd_data_file, file_type;
