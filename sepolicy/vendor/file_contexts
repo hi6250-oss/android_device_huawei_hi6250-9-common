@@ -12,6 +12,5 @@
 /version(/.*)?							u:object_r:version_file:s0
 
 # TEE
-/vendor/bin/iked						u:object_r:iked_exec:s0
 /vendor/bin/teecd						u:object_r:tee_exec:s0
 /vendor/bin/hw/vendor\.huawei\.hardware\.libteec@2\.0-service	u:object_r:hal_vendor_libteec_default_exec:s0

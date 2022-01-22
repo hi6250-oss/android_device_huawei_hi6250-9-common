@@ -290,18 +290,6 @@ service hiscoutmanager /system/vendor/bin/hiscoutmanager
     oneshot
     seclabel u:r:hiscoutmanager:s0
 	
-## vowifi iked defalut start
-## Service definition
-service iked /system/vendor/bin/iked
-    class late_start
-    user root
-	disabled
-    group system wakelock
-    seclabel u:r:iked:s0
-	
-on property:ro.vendor.config.hw_vowifi=true
-    start iked
-	
 ## Service definition
 service logserver /system/bin/logserver
     class late_start

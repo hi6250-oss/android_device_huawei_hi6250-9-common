@@ -476,18 +476,6 @@ vendor/lib64/vendor.huawei.hardware.libteec@2.0.so
 vendor/lib/hw/thermal.hi6250.so
 vendor/lib64/hw/thermal.hi6250.so
 
-# VoWifi
-vendor/bin/iked
-vendor/etc/ikedconfig/default.conf
-vendor/etc/ikedconfig/ikedconfig.ini
-vendor/etc/ikedconfig/racoon2.conf
-vendor/etc/ikedconfig/tunnel_ike.conf
-vendor/etc/ikedconfig/tunnel_ike_natt.conf
-vendor/etc/ikedconfig/vals.conf
-vendor/lib/vendor.huawei.hardware.iked@1.0.so
-vendor/lib64/libracoon2.so
-vendor/lib64/vendor.huawei.hardware.iked@1.0.so
-
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
