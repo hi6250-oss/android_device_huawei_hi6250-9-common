@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
     android.hardware.radio.deprecated@1.0 \
     librilutils \
+    mploader \
 #    qti-telephony-common
 
 #PRODUCT_BOOT_JARS += \

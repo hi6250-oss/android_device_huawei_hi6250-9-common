@@ -390,6 +390,7 @@ vendor/lib64/vendor.huawei.hardware.radio@2.0.so
 vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so
 vendor/lib64/vendor.huawei.hardware.radio.deprecated@1.0.so
 vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so
+vendor/phone.prop
 
 # Sensors
 vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi6250.so

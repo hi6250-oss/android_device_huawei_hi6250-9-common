@@ -1,0 +1,10 @@
+on fs
+    wait /vendor/phone.prop
+    chmod 0644 /proc/cmdline
+    start mploader
+
+service mploader /vendor/bin/hw/mploader
+    user root
+    group system radio
+    oneshot
+    disabled

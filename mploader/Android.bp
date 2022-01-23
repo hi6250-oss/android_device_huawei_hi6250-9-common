@@ -1,0 +1,9 @@
+cc_binary {
+    name: "mploader",
+    srcs: ["mploader.cpp"],
+    init_rc: ["mploader.rc"],
+    header_libs: ["libhardware_headers","libutils_headers"],
+    shared_libs: ["libbase"],
+    relative_install_path: "hw",
+    vendor: true,
+}
