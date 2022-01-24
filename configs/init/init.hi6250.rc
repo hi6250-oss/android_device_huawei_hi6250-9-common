@@ -400,9 +400,9 @@ on boot
 
 	#sensorhub
 	chown system system /dev/sensorhub
-	chmod 0660 /dev/sensorhub
+	chmod 0664 /dev/sensorhub
 	chown system system /dev/motionhub
-	chmod 0660 /dev/motionhub
+	chmod 0664 /dev/motionhub
 	chown system system /sys/devices/platform/huawei_sensor/acc_info
 	chown system system /sys/devices/platform/huawei_sensor/mag_info
 	chown system system /sys/devices/platform/huawei_sensor/gyro_info
