@@ -1,6 +1,6 @@
-on post-fs
-    mkdir /data/vendor/bluedroid 0770 bluetooth bluetooth
-    mkdir /data/vendor/wifi 0770 wifi wifi
+on fs
+    wait /data/vendor/wifi
+    wait /data/vendor/bluedroid
     start mac_nvme
 
 service mac_nvme /vendor/bin/hw/mac_nvme
