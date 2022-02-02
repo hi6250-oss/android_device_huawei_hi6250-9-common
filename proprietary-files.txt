@@ -244,10 +244,6 @@ vendor/lib64/hw/fm.hisi.hi6250.so
 vendor/lib64/hw/vendor.huawei.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.fm@1.0.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.hi6250.so
-vendor/lib64/hw/gatekeeper.hi6250.so
-
 # GPS
 vendor/bin/hw/vendor.huawei.hardware.gnss@1.2-service
 vendor/bin/gnss_control_hisi
@@ -311,10 +307,6 @@ vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.0.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.1.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.2.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
-
-# Keystore
-vendor/lib/hw/keystore.hi6250.so
-vendor/lib64/hw/keystore.hi6250.so
 
 # Memtrack
 vendor/lib/hw/memtrack.hi6250.so
