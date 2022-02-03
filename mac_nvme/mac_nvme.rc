@@ -1,4 +1,4 @@
-on fs
+on property:sys.userdata_is_ready=1
     wait /data/vendor/wifi
     wait /data/vendor/bluedroid
     start mac_nvme
