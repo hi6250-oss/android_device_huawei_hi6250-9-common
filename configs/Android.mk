@@ -152,6 +152,13 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := rild.rc
+LOCAL_SRC_FILES := init/rild.rc
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := ueventd.hi6250.rc
 LOCAL_MODULE_STEM := ueventd.rc
 LOCAL_SRC_FILES := init/ueventd.rc

@@ -1,0 +1,9 @@
+on property:sys.rilprops_ready=1
+    start vendor.ril-daemon
+
+service vendor.ril-daemon /vendor/bin/hw/rild
+    class main
+    user root
+    group radio cache inet misc audio log readproc wakelock system
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+    disabled

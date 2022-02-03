@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     init.recovery.hi6250.rc \
     init.tee.rc \
     init.vowifi.rc \
+    rild.rc \
     ueventd.hi6250.rc
 
 # Keymaster
