@@ -25,6 +25,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := hi6250
 
+# Charger
+BACKLIGHT_PATH := /sys/class/leds/lcd_backlight0/brightness
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
