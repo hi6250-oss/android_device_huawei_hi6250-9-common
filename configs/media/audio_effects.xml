@@ -24,7 +24,6 @@
         <library name="loudness_enhancer" path="libldnhncr.so"/>
         <library name="huawei_processing" path="libhuaweiprocessing.so"/>
         <library name="dynamics_processing" path="libdynproc.so"/>
-        <library name="dapdp" path="libswdap.so"/>
     </libraries>
 
     <!-- list of effects to load.
@@ -66,7 +65,6 @@
         <effect name="loudness_enhancer" library="loudness_enhancer" uuid="fa415329-2034-4bea-b5dc-5b381c8d1e2c"/>
         <effect name="huawei_pre_processing" library="huawei_processing" uuid="e707d040-6b79-11e2-b16a-0002a5d5c51b"/>
         <effect name="dynamics_processing" library="dynamics_processing" uuid="e0e6539b-1781-7261-676f-6d7573696340"/>
-        <effect name="dapdp" library="dapdp" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
     </effects>
 
     <!-- Audio pre processor configurations.
@@ -109,9 +107,6 @@
     -->
 
     <preprocess>
-        <stream type="default">
-            <apply effect="huawei_pre_processing"/>
-        </stream>
         <stream type="mic">
             <apply effect="huawei_pre_processing"/>
         </stream>
