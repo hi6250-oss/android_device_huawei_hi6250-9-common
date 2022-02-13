@@ -18,10 +18,6 @@ vendor/lib64/soundfx/liboffloadvisualizer.so
 
 # Bluetooth
 vendor/etc/bluetooth/bt_vendor.conf
-vendor/lib/libbt-vendor.so
-vendor/lib/libbt-vendor-hisi.so
-vendor/lib64/libbt-vendor.so
-vendor/lib64/libbt-vendor-hisi.so
 
 # Camera
 vendor/bin/CameraDaemon
