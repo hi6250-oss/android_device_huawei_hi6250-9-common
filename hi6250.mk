@@ -27,6 +27,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
+    audio_effects.xml \
+    audio_policy_configuration.xml \
     libaudioroute \
     libtinyalsa \
     libtinycompress
