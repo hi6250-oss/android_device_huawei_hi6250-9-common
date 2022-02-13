@@ -129,13 +129,13 @@ LOCAL_CFLAGS += $(D_CFLAGS)
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 include $(BUILD_SHARED_LIBRARY)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE       := libnfc-nci.conf
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
-LOCAL_SRC_FILES    := $(LOCAL_MODULE)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE       := libnfc-brcm.conf
+#LOCAL_MODULE_TAGS  := optional
+#LOCAL_MODULE_CLASS := ETC
+#LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
+#LOCAL_SRC_FILES    := $(LOCAL_MODULE)
+#include $(BUILD_PREBUILT)
 
 #include $(CLEAR_VARS)
 #LOCAL_MODULE       := libnfc-nxp.conf
