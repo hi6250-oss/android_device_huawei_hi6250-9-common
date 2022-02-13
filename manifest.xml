@@ -209,16 +209,6 @@
         <fqname>@1.1::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-        </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -257,46 +247,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVibrator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.activity_recognition</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IActivityRecognition</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IActivityRecognition/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IExtBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::IExtBiometricsFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.biometrics.hwfacerecognize</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IBiometricsFaceRecognize</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IBiometricsFaceRecognize/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.biometrics.hwsecurefacerecognize</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureBiometricsFaceRecognize</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISecureBiometricsFaceRecognize/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.huawei.hardware.camera.camResource</name>
@@ -359,16 +309,6 @@
         <fqname>@2.0::IMediaComm/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.huawei.hardware.hinetmanager</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHinetmanagerDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHinetmanagerDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.hisiradio</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -391,136 +331,6 @@
         <fqname>@1.0::ISuplclienttoserverInterface/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.huawei.hardware.huawei_security_vnode</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwSecurityVNode</name>
-            <instance>HwInSExtNode</instance>
-        </interface>
-        <fqname>@1.0::IHwSecurityVNode/HwInSExtNode</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.huaweiantitheft</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHuaweiAntiTheft</name>
-            <instance>huaweiantitheft</instance>
-        </interface>
-        <fqname>@1.0::IHuaweiAntiTheft/huaweiantitheft</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.huaweisigntool</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISignTool</name>
-            <instance>huaweisigntool</instance>
-        </interface>
-        <fqname>@1.0::ISignTool/huaweisigntool</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwdisplay</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplay</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplay/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwdisplay.displayengine</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IDisplayEngineWrapper</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IDisplayEngineWrapper/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwfactoryinterface</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IHwFactoryInterface</name>
-            <instance>hwfactoryinterface_hal</instance>
-        </interface>
-        <fqname>@1.1::IHwFactoryInterface/hwfactoryinterface_hal</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwfs</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwfs</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHwfs/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwhiview</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwHiviewInterface</name>
-            <instance>hwhiview_hal</instance>
-        </interface>
-        <fqname>@1.0::IHwHiviewInterface/hwhiview_hal</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwstp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwStp</name>
-            <instance>hwstp</instance>
-        </interface>
-        <fqname>@1.0::IHwStp/hwstp</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwupdate</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHwUpdate</name>
-            <instance>hwupdate_hal</instance>
-        </interface>
-        <fqname>@1.0::IHwUpdate/hwupdate_hal</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.hwvibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHWVibrator</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHWVibrator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.iawareperf</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUniPerf</name>
-            <instance>uniperf</instance>
-        </interface>
-        <fqname>@1.0::IUniPerf/uniperf</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.iawareperfpolicy</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPerfPolicy</name>
-            <instance>perfpolicy</instance>
-        </interface>
-        <fqname>@1.0::IPerfPolicy/perfpolicy</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.libteec</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -531,46 +341,6 @@
         <fqname>@2.0::ILibteecGlobal/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.huawei.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ILight</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ILight/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.modemchr</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IModemchrDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IModemchrDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.modemlogcat</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IModemlogcat</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IModemlogcat/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHWNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHWNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.huawei.hardware.perfgenius</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -579,16 +349,6 @@
             <instance>perfgenius</instance>
         </interface>
         <fqname>@2.0::IPerfGenius/perfgenius</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.power</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHWPower</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHWPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.huawei.hardware.radio</name>
@@ -637,45 +397,5 @@
         </interface>
         <fqname>@1.0::IRadioIms/rildi</fqname>
         <fqname>@1.0::IRadioIms/rildi2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISensors</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISensors/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.tp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchscreen</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITouchscreen/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IHwWifiExt</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IHwWifiExt/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.huawei.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::ISupplicant/default</fqname>
     </hal>
 </manifest>

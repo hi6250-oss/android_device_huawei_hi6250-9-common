@@ -79,12 +79,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.huawei.hardware.ai</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAiEngineService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 </compatibility-matrix>
