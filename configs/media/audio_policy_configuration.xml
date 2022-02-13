@@ -150,16 +150,8 @@
 
     <!-- Volume section -->
 
-    <xi:include href="/odm/etc/audio/volume/audio_policy_volumes.xml">
-        <xi:fallback>
-            <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
-        </xi:fallback>
-    </xi:include>
-    <xi:include href="/odm/etc/audio/volume/default_volume_tables.xml">
-        <xi:fallback>
-            <xi:include href="/vendor/etc/default_volume_tables.xml"/>
-        </xi:fallback>
-    </xi:include>
+    <xi:include href="/odm/etc/audio/volume/audio_policy_volumes.xml"/>
+    <xi:include href="/odm/etc/audio/volume/default_volume_tables.xml"/>
 
     <!-- End of Volume section -->
 
