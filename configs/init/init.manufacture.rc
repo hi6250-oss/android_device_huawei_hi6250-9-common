@@ -49,6 +49,8 @@ on post-fs
 on post-fs-data
 
 on boot
+    mkdir /dev/oinv 775 root system
+    mkdir /dev/socket/oeminfo_nvm 660 root system
 
 service atcmdserver /vendor/bin/atcmdserver
     class main

@@ -1,3 +1,6 @@
+# OEMInfo
+/(vendor|system/vendor)/bin/oeminfo_nvm_server			u:object_r:oeminfo_nvm_exec:s0
+
 # Root
 /3rdmodem(/.*)?							u:object_r:thirdmodem_file:s0
 /3rdmodemnvm(/.*)?						u:object_r:thirdmodemnvm_file:s0
