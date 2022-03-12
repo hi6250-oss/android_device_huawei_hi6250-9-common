@@ -42,7 +42,6 @@ on post-fs
     chmod 0660 /proc/uid_iostats/remove_uid_list
 
 on early-boot
-    #add by A00165503
     chmod 660 /dev/appvcom
     chmod 660 /dev/appvcom1
     chmod 660 /dev/appvcom2
@@ -76,7 +75,6 @@ on early-boot
     chmod 660 /dev/appvcomLOG
    chmod 660 /dev/appvcomLOG1
 
-# Added by lwx331495 for VCOM capacity, 2017-02-20, begin */
     chmod 660 /dev/appvcom28
     chmod 660 /dev/appvcom29
     chmod 660 /dev/appvcom30
@@ -102,9 +100,7 @@ on early-boot
     chmod 660 /dev/appvcom50
     chmod 660 /dev/appvcom51
     chmod 660 /dev/appvcom52
-# Added by lwx331495 for VCOM capacity, 2017-02-20, end */
 
-# DTS2014010911110 M00217266 20140110 begin
     chown radio radio /dev/appvcom
     chown radio radio /dev/appvcom1
     chown radio radio /dev/appvcom5
@@ -117,16 +113,13 @@ on early-boot
     chown radio radio /dev/appvcom21
     chown radio radio /dev/appvcom25
     chown radio radio /dev/appvcom26
-#/*Added by y00356011,2017-03-22, begin*/
     chown radio radio /dev/appvcom27
     chown radio radio /dev/appvcom28
     chown radio radio /dev/appvcom29
     chown radio radio /dev/appvcom30
     chown radio radio /dev/appvcom31
     chown radio radio /dev/appvcom32
-#/*Added by y00356011,2017-03-22, end*/
     chown media media /dev/appvcom4
-#/* Deleted by l00198894 DTS2017060506728, 2017-06-05 */
     chown system system /dev/appvcom2
     chown system system /dev/appvcom8
     chown system system /dev/appvcom22
@@ -140,23 +133,16 @@ on early-boot
     chown radio radio /dev/appvcom19
 #/* AR000A2G3P zhangze 00346362 20180129 end >*/
 
-#/*Added by L00263029, 2018/07/23, begin*/
     chown system system /dev/appvcom18
     chown system system /dev/appvcom34
-#/*Added by L00263029, 2018/07/23, end*/
 
     chown system system /dev/appvcomERRLOG
-# DTS2014010911110 M00217266 20140110 end
 
     chown system system /proc/bind_pid
 
-# DTS2014021302618 j00174725 20140217 begin
     chown system system /proc/portcfg
-# DTS2014021302618 j00174725 20140217 end
 
-# DTS2015012601356 j00174725 20150122 begin
     chown system system /proc/getslice
-# DTS2015012601356 j00174725 20150122 end
 
 #modify c core reset file owner   
     chown radio radio sys/devices/platform/balong_power/state
@@ -173,9 +159,7 @@ on early-boot
     write /dev/pmsg0 1
 
 on boot
-    # DTS2015103001118 z00301431 20160123 begin
     chown radio radio /proc/modemstatus
-    # DTS2015103001118 z00301431 20160123 end
 
 on data_ready
     write /proc/data-ready 1

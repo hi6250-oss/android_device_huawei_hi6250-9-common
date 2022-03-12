@@ -96,6 +96,8 @@ on boot
 #charger
     chmod 0660 /sys/class/hw_power/soc_control/control
     chown system system /sys/class/hw_power/soc_control/control
+    chmod 0660 /sys/class/hw_power/interface/vterm_dec
+    chown system system /sys/class/hw_power/interface/vterm_dec
     chmod 0660 /sys/class/hw_power/interface/enable_charger
     chown system system /sys/class/hw_power/interface/enable_charger
     chmod 0660 /sys/class/hw_power/charger/charge_data/adc_conv_rate
