@@ -1,5 +1,5 @@
 #
-# Vendor Blobs for hi6250-common - FIG-LX1 9.1.0.163(C432E8R1P5T8)
+# Vendor Blobs for hi6250-common - ANE-LGRP2-OVS 9.1.0.401
 #
 
 # Audio
@@ -468,8 +468,8 @@ vendor/lib64/vendor.huawei.hardware.libteec@2.0.so
 vendor/lib/hw/thermal.hi6250.so
 vendor/lib64/hw/thermal.hi6250.so
 
-# Widevine
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib/libwvhidl.so
-vendor/lib64/libwvhidl.so
+# Widevine - FIG-LX1 9.1.0.163(C432E8R1P5T8)
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine|2d5aaf0d70e834d2baf5e0b1182a0948d5a0998e
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|335e60d5042cfbe08f2da27087418a6997387440
+vendor/lib/libwvhidl.so|51f977f11dfdeaeec18a3e6be74a858affe80624
+vendor/lib64/libwvhidl.so|abc648df92d85883845fc05d8b7e7178e778f0a6
