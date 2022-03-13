@@ -238,10 +238,12 @@ vendor/lib64/vendor.huawei.hardware.fm@1.0.so
 
 # GPS
 vendor/bin/hw/vendor.huawei.hardware.gnss@1.2-service
+vendor/bin/hw/vendor.huawei.hardware.hisupl@1.0-service
 vendor/bin/gnss_control_hisi
 vendor/bin/gnss_engine_hisi
 vendor/bin/gnss_supl20clientd_hisi
 vendor/bin/gnss_watchlssd_thirdparty
+vendor/bin/gpsdaemon
 vendor/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem
 vendor/etc/gnss/config/gnss_lss_slp_thirdparty.p12
 vendor/etc/gnss/config/gnss_suplconfig_hisi.xml
@@ -258,14 +260,19 @@ vendor/etc/gnss/rmd/c/aindex.bin
 vendor/etc/gnss/rmd/c/a_1
 vendor/etc/gnss/gnss_lss_thirdparty.conf
 vendor/etc/init/vendor.huawei.hardware.gnss@1.2-service.rc
+vendor/etc/init/vendor.huawei.hardware.hisupl@1.0-service.rc
 vendor/etc/geoloc.conf
 vendor/lib/libgnss_lss_gw_thirdparty.so
 vendor/lib/vendor.huawei.hardware.gnss@1.0.so
 vendor/lib/vendor.huawei.hardware.gnss@1.1.so
 vendor/lib/vendor.huawei.hardware.gnss@1.2.so
+vendor/lib/vendor.huawei.hardware.hisupl@1.0.so
 vendor/lib64/hw/gps.hi1102.default.so
 vendor/lib64/hw/gps.hisi.default.so
+vendor/lib64/hw/hisupl.hi1102.default.so
+vendor/lib64/hw/hisupl.hi1102.default.so:vendor/lib64/hw/hisupl.hisi.default.so
 vendor/lib64/hw/vendor.huawei.hardware.gnss@1.2-impl.so
+vendor/lib64/hw/vendor.huawei.hardware.hisupl@1.0-impl.so
 vendor/lib64/libgnss_common_hisi.so
 vendor/lib64/libgnss_lss_gw_thirdparty.so
 vendor/lib64/libgnss_supl10client_hisi.so
@@ -275,6 +282,7 @@ vendor/lib64/libgnss_supl20if_hisi.so
 vendor/lib64/vendor.huawei.hardware.gnss@1.0.so
 vendor/lib64/vendor.huawei.hardware.gnss@1.1.so
 vendor/lib64/vendor.huawei.hardware.gnss@1.2.so
+vendor/lib64/vendor.huawei.hardware.hisupl@1.0.so
 
 # Graphics
 vendor/lib/egl/libGLES_mali.so
@@ -317,6 +325,7 @@ vendor/lib/libchrlog.so
 vendor/lib/libconn_factory_test.so
 vendor/lib/libfaccommon_share.so
 vendor/lib/libfacsignedapi_share.so
+vendor/lib/libhuaweicust.so
 vendor/lib/libhwlog.so
 vendor/lib/libimonitor.so
 vendor/lib/libjtag_wdt_ctrl.so
@@ -331,6 +340,7 @@ vendor/lib64/libchrlog.so
 vendor/lib64/libconn_factory_test.so
 vendor/lib64/libfaccommon_share.so
 vendor/lib64/libfacsignedapi_share.so
+vendor/lib64/libhuaweicust.so
 vendor/lib64/libhwlog.so
 vendor/lib64/libimonitor.so
 vendor/lib64/libjtag_wdt_ctrl.so
