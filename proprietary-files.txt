@@ -300,6 +300,10 @@ vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.1.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.2.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
 
+# Lights
+vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi6250.so
+vendor/lib64/hw/lights.default.so:vendor/lib64/hw/lights.hi6250.so
+
 # Memtrack
 vendor/lib/hw/memtrack.hi6250.so
 vendor/lib64/hw/memtrack.hi6250.so
