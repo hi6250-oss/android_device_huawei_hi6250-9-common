@@ -257,10 +257,12 @@ on nonencrypted
     trigger data_ready
 
 on data_ready
+    setprop sys.userdata_is_ready 1
     write /proc/post-fs-data 1
     write /proc/apanic_console 1
 
 on data_not_ready
+    setprop sys.userdata_is_ready 0
     write /proc/post-fs-data 0
 ### encryption end
 
