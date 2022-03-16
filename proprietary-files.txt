@@ -406,6 +406,11 @@ vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi6250.so
 vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi6250.so
 
 # TEE
+bin/tee_auth_daemon:vendor/bin/tee_auth_daemon
+lib/libteec_client.so:vendor/lib/libteec_client.so
+lib/libtuidaemon.so:vendor/lib/libtuidaemon.so
+lib64/libteec_client.so:vendor/lib64/libteec_client.so
+lib64/libtuidaemon.so:vendor/lib64/libtuidaemon.so
 vendor/bin/hw/vendor.huawei.hardware.libteec@2.0-service
 vendor/bin/32e6a847-ac89-4f81-8a13-f4ae50451d7f.sec
 vendor/bin/335129cd-41fa-4b53-9797-5ccb202a52d4.sec
