@@ -482,6 +482,9 @@ vendor/lib64/libteec_eid.so
 vendor/lib64/libteec_vendor.so
 vendor/lib64/vendor.huawei.hardware.libteec@2.0.so
 
+# TEE - VNS-L21 EMUI 5
+vendor/etc/DroidSansFallbackTui.ttf|a4ef62b56a09fc5a622b90a70ce19dab1c4a6a75
+
 # Thermal
 vendor/lib/hw/thermal.hi6250.so
 vendor/lib64/hw/thermal.hi6250.so
