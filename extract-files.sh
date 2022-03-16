@@ -72,19 +72,6 @@ function blob_fixup() {
 	vendor/lib/libxcollie.so|vendor/lib64/libxcollie.so)
 	    "${PATCHELF}" --add-needed "libunwindstack_v28.so" "${2}"
 	    ;;
-	vendor/lib64/hw/hwcomposer.hi6250.so)
-	    # Disable checkPartialUpdate
-	    xxd -p "${2}" | sed "s/acbcff97e00313aa/1f2003d5e00313aa/g" | xxd -r -p > "${2}".patched
-	    mv "${2}".patched "${2}"
-
-	    # Disable SetPartialUpdates
-	    xxd -p "${2}" | sed "s/e00314aaa3bcff97/e00314aa1f2003d5/g" | xxd -r -p > "${2}".patched
-	    mv "${2}".patched "${2}"
-
-	    # Disable CalcLayerMaskRects
-	    xxd -p "${2}" | sed "s/a0bcff97d70e40b9/1f2003d5d70e40b9/g" | xxd -r -p > "${2}".patched
-	    mv "${2}".patched "${2}"
-	    ;;
     esac
 }
 

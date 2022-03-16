@@ -298,7 +298,6 @@ vendor/lib/vendor.huawei.hardware.graphics.displayeffect@1.2.so
 vendor/lib/vendor.huawei.hardware.perfgenius@2.0.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/hw/gralloc.hi6250.so
-vendor/lib64/hw/hwcomposer.hi6250.so
 vendor/lib64/libOpenCLFoundation.so
 vendor/lib64/libSR_opencl.so
 vendor/lib64/libhiion.so
@@ -307,6 +306,10 @@ vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.0.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.1.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.2.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
+
+# HWComposer - patched to nop some functions
+# (checkPartialUpdate, SetPartialUpdates, CalcLayerMaskRects, CalcComposeRect) to fix HWC itself, random crashes, etc.
+vendor/lib64/hw/hwcomposer.hi6250.so|4b918096b20bfd17d204973286d411d64d7ae39e
 
 # Lights
 vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi6250.so
