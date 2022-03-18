@@ -230,6 +230,7 @@ vendor/firmware/wifi_cfg
 
 # FM-Radio
 vendor/bin/hw/vendor.huawei.hardware.fm@1.0-service
+vendor/etc/init/vendor.huawei.hardware.fm@1.0-service.rc
 vendor/lib/hw/fm.hisi.hi6250.so
 vendor/lib/vendor.huawei.hardware.fm@1.0.so
 vendor/lib64/hw/fm.hisi.hi6250.so
