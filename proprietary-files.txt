@@ -307,8 +307,8 @@ vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.2.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
 
 # HWComposer - patched to nop some functions
-# (checkPartialUpdate, SetPartialUpdates, CalcLayerMaskRects, CalcComposeRect) to fix HWC itself, random crashes, etc.
-vendor/lib64/hw/hwcomposer.hi6250.so|4b918096b20bfd17d204973286d411d64d7ae39e
+# (checkPartialUpdate, SetPartialUpdates, CalcLayerMaskRects, CalcComposeRect, CheckRotCapability) to fix HWC itself, random crashes, etc.
+vendor/lib64/hw/hwcomposer.hi6250.so|708a59318b0d4b2267dddfef87d26cfa0af888eb
 
 # Lights
 vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi6250.so
