@@ -3,7 +3,7 @@ on init
     chmod 0400 /dev/hisi_teelog
 
 #secure os tee agent
-service teeauth /system/bin/tee_auth_daemon
+service teeauth /vendor/bin/tee_auth_daemon
     socket tui_daemon stream 660 root system
     socket tee-multi-user stream 660 root system
     class core
