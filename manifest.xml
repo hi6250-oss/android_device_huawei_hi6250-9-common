@@ -210,16 +210,6 @@
         <fqname>@1.1::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISensors</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISensors/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -388,5 +378,15 @@
         </interface>
         <fqname>@1.0::IRadioIms/rildi</fqname>
         <fqname>@1.0::IRadioIms/rildi2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.sensors</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensors</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISensors/default</fqname>
     </hal>
 </manifest>

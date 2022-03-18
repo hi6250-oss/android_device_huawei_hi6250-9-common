@@ -47,7 +47,6 @@ vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.0.so
 vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.1.so
 vendor/lib/vendor.huawei.hardware.hwfactoryinterface@1.0.so
 vendor/lib/vendor.huawei.hardware.hwfactoryinterface@1.1.so
-vendor/lib/vendor.huawei.hardware.sensors@1.0.so
 vendor/lib64/hw/CameraFactoryService.so
 vendor/lib64/hw/hicam.hal.bz.so
 vendor/lib64/hw/hicam.hal.service.so
@@ -76,7 +75,6 @@ vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.0.so
 vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.1.so
 vendor/lib64/vendor.huawei.hardware.hwfactoryinterface@1.0.so
 vendor/lib64/vendor.huawei.hardware.hwfactoryinterface@1.1.so
-vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 
 # Camera Configs
 vendor/etc/camera/bshutter/default/algo.xml
@@ -406,8 +404,13 @@ vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so
 vendor/phone.prop
 
 # Sensors
+vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
+vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
 vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi6250.so
+vendor/lib/vendor.huawei.hardware.sensors@1.0.so
 vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi6250.so
+vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
+vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 
 # TEE
 bin/tee_auth_daemon:vendor/bin/tee_auth_daemon
