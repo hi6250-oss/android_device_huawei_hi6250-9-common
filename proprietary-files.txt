@@ -3,7 +3,9 @@
 #
 
 # Audio
-vendor/lib64/hw/audio.primary.hisi.so:vendor/lib64/hw/audio.primary.hi6250.so
+vendor/bin/hw/vendor.huawei.hardware.audio@4.0-service
+vendor/etc/init/vendor.huawei.hardware.audio@4.0-service.rc
+vendor/lib64/hw/audio.primary.hisi.so
 vendor/lib64/libasd.so
 vendor/lib64/libaudio_custom.so
 vendor/lib64/libmax98925.so
