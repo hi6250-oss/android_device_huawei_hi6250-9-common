@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_brightness.sh
+
 # Debug
 PRODUCT_PACKAGES += \
     debug.rc

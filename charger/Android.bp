@@ -1,0 +1,5 @@
+sh_binary {
+    name: "charger_brightness.sh",
+    src: "charger_brightness.sh",
+    vendor: true,
+}

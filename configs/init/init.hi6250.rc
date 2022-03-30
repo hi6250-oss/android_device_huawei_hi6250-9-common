@@ -298,6 +298,8 @@ on charger
     write /sys/class/devfreq/ddrfreq_up_threshold/max_freq 933000000
     write /sys/class/devfreq/ddrfreq_up_threshold/min_freq 933000000
 
+    setprop sys.use_charger_brightness 1
+
     class_start charger
 
 on fs
@@ -787,3 +789,9 @@ service charger /system/bin/charger
     class charger
     critical
     seclabel u:r:charger:s0
+
+service charger_brightness /vendor/bin/charger_brightness.sh
+    class charger
+    disabled
+    oneshot
+    keycodes 116
