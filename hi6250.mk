@@ -131,6 +131,12 @@ PRODUCT_PACKAGES += \
     mac_nvme
 
 # Media
+PRODUCT_PACKAGES += \
+    media_codecs.xml \
+    media_codecs_performance.xml \
+    media_profiles.xml \
+    media_profiles_V1_0.xml
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \

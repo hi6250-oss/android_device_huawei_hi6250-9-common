@@ -194,3 +194,31 @@ LOCAL_SRC_FILES := media/audio_policy_configuration.xml
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := media_codecs.xml
+LOCAL_SRC_FILES := media/media_codecs.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := media_codecs_performance.xml
+LOCAL_SRC_FILES := media/media_codecs_performance.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := media_profiles.xml
+LOCAL_SRC_FILES := media/media_profiles.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := media_profiles_V1_0.xml
+LOCAL_SRC_FILES := media/media_profiles_V1_0.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
