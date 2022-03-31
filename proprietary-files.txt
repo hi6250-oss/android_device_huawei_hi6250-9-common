@@ -5,12 +5,15 @@
 # Audio
 vendor/bin/hw/vendor.huawei.hardware.audio@4.0-service
 vendor/etc/init/vendor.huawei.hardware.audio@4.0-service.rc
+vendor/lib/vendor.huawei.hardware.rtt@1.0.so
 vendor/lib64/hw/audio.primary.hisi.so
 vendor/lib64/libasd.so
 vendor/lib64/libaudio_custom.so
 vendor/lib64/libmax98925.so
+vendor/lib64/librttserver.so
 vendor/lib64/libsmartpakit.so
 vendor/lib64/libtas2560.so
+vendor/lib64/vendor.huawei.hardware.rtt@1.0.so
 
 # Audio Effects
 vendor/lib/soundfx/libhuaweiprocessing.so
@@ -175,10 +178,16 @@ vendor/bin/hw/vendor.huawei.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/vendor.huawei.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/hw/fingerprint.hi6250.so
 vendor/lib/lib_fpc_tac_shared.so
+vendor/lib/libiawareperf_client.so
 vendor/lib/vendor.huawei.hardware.biometrics.fingerprint@2.1.so
+vendor/lib/vendor.huawei.hardware.hwvibrator@1.0.so
+vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/lib64/hw/fingerprint.hi6250.so
 vendor/lib64/lib_fpc_tac_shared.so
+vendor/lib64/libiawareperf_client.so
 vendor/lib64/vendor.huawei.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
+vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/usr/idc/fingerprint.idc
 vendor/usr/keylayout/fingerprint.kl
 
