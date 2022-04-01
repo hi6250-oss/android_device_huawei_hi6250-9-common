@@ -9,6 +9,7 @@ vendor/lib/vendor.huawei.hardware.rtt@1.0.so
 vendor/lib64/hw/audio.primary.hisi.so
 vendor/lib64/libasd.so
 vendor/lib64/libaudio_custom.so
+vendor/lib64/libaudiodump.so
 vendor/lib64/libmax98925.so
 vendor/lib64/librttserver.so
 vendor/lib64/libsmartpakit.so
@@ -18,8 +19,10 @@ vendor/lib64/vendor.huawei.hardware.rtt@1.0.so
 # Audio Effects
 vendor/lib/soundfx/libhuaweiprocessing.so
 vendor/lib/soundfx/liboffloadvisualizer.so
+vendor/lib/libhuaweiaudioeffectutil.so
 vendor/lib64/soundfx/libhuaweiprocessing.so
 vendor/lib64/soundfx/liboffloadvisualizer.so
+vendor/lib64/libhuaweiaudioeffectutil.so
 
 # Bluetooth
 vendor/etc/bluetooth/bt_vendor.conf
@@ -382,6 +385,7 @@ vendor/lib/libchrlog.so
 vendor/lib/libconn_factory_test.so
 vendor/lib/libfaccommon_share.so
 vendor/lib/libfacsignedapi_share.so
+vendor/lib/libhivwservice.so
 vendor/lib/libhuaweicust.so
 vendor/lib/libhwlog.so
 vendor/lib/libimonitor.so
@@ -397,6 +401,7 @@ vendor/lib64/libchrlog.so
 vendor/lib64/libconn_factory_test.so
 vendor/lib64/libfaccommon_share.so
 vendor/lib64/libfacsignedapi_share.so
+vendor/lib64/libhivwservice.so
 vendor/lib64/libhuaweicust.so
 vendor/lib64/libhwlog.so
 vendor/lib64/libimonitor.so
