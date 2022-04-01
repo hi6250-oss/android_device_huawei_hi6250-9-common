@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_brightness.sh
