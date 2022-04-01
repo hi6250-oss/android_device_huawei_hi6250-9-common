@@ -84,6 +84,28 @@ Only the three quirks included above are recognized at this point:
     <Setting name="max-video-encoder-input-buffers" value="5" />
     </Settings>
 
+    <Encoders>
+
+        <MediaCodec name="OMX.IMG.TOPAZ.VIDEO.Encoder">
+            <Type name="video/3gpp">
+              <Limit name="size" min="128x128" max="4096x4096" />
+              <Limit name="bitrate" range="10-60000000" />
+              <Limit name="concurrent-instances" max="2" />
+            </Type>
+            <Type name="video/avc">
+              <Limit name="size" min="128x128" max="4096x4096" />
+              <Limit name="bitrate" range="10-60000000" />
+              <Limit name="concurrent-instances" max="2" />
+            </Type>
+            <Type name="video/mp4v-es">
+              <Limit name="size" min="128x128" max="4096x4096" />
+              <Limit name="bitrate" range="12-60000000" />
+              <Limit name="concurrent-instances" max="2" />
+            </Type>
+        </MediaCodec>
+
+    </Encoders>
+
     <Decoders>
 
         <MediaCodec name="OMX.IMG.MSVDX.Decoder.AVC" type="video/avc">

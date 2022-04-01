@@ -15,6 +15,22 @@
 -->
 <MediaCodecs>
     <Encoders>
+        <MediaCodec name="OMX.IMG.TOPAZ.VIDEO.Encoder" type="video/avc" update="true">
+                <Limit name="measured-frame-rate-320x240" range="150-477" />
+                <Limit name="measured-frame-rate-720x480" range="173-173" />
+                <Limit name="measured-frame-rate-1280x720" range="75-75" />
+                <Limit name="measured-frame-rate-1920x1080" range="37-37" />
+        </MediaCodec>
+        <MediaCodec name="OMX.IMG.TOPAZ.VIDEO.Encoder" type="video/mp4v-es" update="true">
+                <Limit name="measured-frame-rate-176x144" range="440-800" />
+                <Limit name="measured-frame-rate-352x288" range="331-331" />
+                <Limit name="measured-frame-rate-640x480" range="179-179" />
+        </MediaCodec>
+        <MediaCodec name="OMX.IMG.TOPAZ.VIDEO.Encoder" type="video/3gpp" update="true">
+                <Limit name="measured-frame-rate-176x144" range="300-1230" />
+                <Limit name="measured-frame-rate-352x288" range="319-319" />
+                <Limit name="measured-frame-rate-704x576" range="192-192" />
+        </MediaCodec>
         <MediaCodec name="OMX.google.h264.encoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="498-498" />
             <Limit name="measured-frame-rate-720x480" range="156-156" />
